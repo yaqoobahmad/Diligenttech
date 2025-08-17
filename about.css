@@ -256,8 +256,10 @@ canvas {
 
 /* ---- BEGIN:section footer  ---- */
 footer {
+    height: 55rem;
     width: 80%;
-    background-color: #131213;
+    border: 2px solid red;
+    background-color:  #191919;
     margin: 50px auto;
     border-radius: 16px;
     padding: 40px 0;
@@ -417,7 +419,8 @@ footer {
 
 
 #details_box2,
-#sec004 {
+#sec004,
+.top_border2 {
     display: none;
 }
 
@@ -425,12 +428,14 @@ footer {
 
     #first,
     #details_box,
-    #sec04 {
+    #sec04,
+    .top_border {
         display: none;
     }
 
     #details_box,
-    #sec004 {
+    #sec004,
+    .top_border2 {
         display: flex;
     }
 
@@ -438,7 +443,7 @@ footer {
         display: flex;
         height: 90px;
         width: 100%;
-        background-color: black;
+        background-color:  #191919;
         justify-content: space-between;
         align-items: center;
         position: fixed;
@@ -503,6 +508,35 @@ footer {
         height: 30rem;
         width: 100%;
     }
+    .top_border2 {
+    border-top: 1px solid #454545;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.ftr_aline{
+    height: 130px;
+    width: 100%;
+}
+    .top_border2 .condition ul li {
+    list-style: none;
+    line-height: 30px;
+}
+.condition{ 
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.top_border2 .condition ul li a {
+    text-decoration: none;
+    color: white;
+}
+.top_border2 small {
+    flex-wrap: wrap;
+    line-height: 50px;
+    color: white;
+}
+
 
 }
 
@@ -555,7 +589,7 @@ footer {
         display: flex;
         height: 90px;
         width: 100%;
-        background-color: black;
+        background-color:  #191919;
         justify-content: space-between;
         align-items: center;
         position: fixed;
