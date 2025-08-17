@@ -9,7 +9,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
-    background-color: #191919;
+    background-color: #191919
 }
 
 body::selection {
@@ -256,13 +256,12 @@ canvas {
 
 /* ---- BEGIN:section footer  ---- */
 footer {
-    height: 55rem;
+    height: 20rem;
     width: 80%;
-    border: 2px solid red;
-    background-color:  #191919;
+    background-color:  #131213;
     margin: 50px auto;
     border-radius: 16px;
-    padding: 40px 0;
+    padding: 40px 0px;
 }
 
 .ftr {
@@ -414,6 +413,34 @@ footer {
     text-decoration: none;
     color: white;
 }
+    .top_border2 {
+    border-top: 1px solid #454545;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.ftr_aline{
+    height: 130px;
+    width: 100%;
+}
+    .top_border2 .condition ul li {
+    list-style: none;
+    line-height: 30px;
+}
+/* .condition{ 
+    width: 100%;
+} */
+
+.top_border2 .condition ul li a {
+    text-decoration: none;
+    color: white;
+}
+.top_border2 small {
+    flex-wrap: wrap;
+    line-height: 50px;
+    color: white;
+}
+
 
 /* ---- END:section footer  ---- */
 
@@ -508,47 +535,23 @@ footer {
         height: 30rem;
         width: 100%;
     }
-    .top_border2 {
-    border-top: 1px solid #454545;
-    text-align: center;
-    margin-top: 10px;
-    
-}
-.ftr_aline{
-    height: 130px;
-    width: 100%;
-}
-    .top_border2 .condition ul li {
-    list-style: none;
-    line-height: 30px;
-}
-.condition{ 
-    /* border: 2px solid red; */
-    width: 100%;
-}
-
-.top_border2 .condition ul li a {
-    text-decoration: none;
-    color: white;
-}
-.top_border2 small {
-    flex-wrap: wrap;
-    line-height: 50px;
-    color: white;
-}
-
+    footer{
+        height: 56rem;
+    }
 
 }
 
 @media (max-width:1080px) and (min-width:768px) {
 
     #sec01,
-    #sec04 {
+    #sec04,
+    .top_border {
         display: none;
     }
 
     #sec02,
-    #sec004 {
+    #sec004,
+    .top_border2 {
         display: block;
     }
 
@@ -578,10 +581,12 @@ footer {
 @media only screen and (max-width: 419px) {
 
     #first,
-    #sec04 {
+    #sec04,
+    .top_border{
         display: none;
     }
-    #sec004{
+    #sec004,
+    .top_border2{
         display: block;
     }
 
@@ -632,6 +637,9 @@ footer {
         height: 320px;
         width: 80%;
         padding: 20px 0px 0px 20px;
+    }
+    footer{
+        height: 60rem;
     }
     .ftr {
         display: flex;
