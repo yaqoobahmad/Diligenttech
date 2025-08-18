@@ -75,20 +75,22 @@ header{
     min-height: 48px;
 }
 
-#menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+#menu {
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    border: none;
+    padding: 7px 30px;
+    font-size: 16px;
+    line-height: 1.8;
+    min-height: 48px;
 }
-
-#menu:hover {
+#menu:hover{
+    border: 2px solid rgb(54, 54, 28);
     background-color: transparent;
-    border: 1px solid rgb(112, 122, 21);
-    color: antiquewhite;
-}
-
-#menu a:hover {
-    /* color: yellow; */
+    color: yellow;
 }
 
 #svg_icon {
@@ -558,7 +560,6 @@ footer {
         padding-left: 10%;
     }
 
-    
     footer{
         height: 60rem;
     }

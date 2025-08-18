@@ -93,31 +93,74 @@
       </div>
     </section>
     <!-- ----    BEGIN:  picture section  ----  -->
-    <section id="picture_section">
-      <div class="main_pic_container">
+    <section id="main_pic_container">
+      <div class="picture_section">
         <div class="inner_div">
-          <div class="pic1">
-            <a href="#">
-              <div class="first img">
+          <div class="first_img">
+            <a class="hancker" href="#">
                 <img src="../imges/mockup-dwelio.webp" alt="" />
-              </div>
             </a>
+            <div class="hover hover1">
+              <h3>Dwelio</h3>
+              <p> Dwelio is a digital platform designed to support real estate agents in the US and Canada by providing high-quality, verified… </p>
+              <a href="#"><span class="btn01"> Preview 
+                <i class="fa-light fa-arrow-right" style="color: red;"></i></span>
+              </a>
+            </div>
           </div>
-          <div class="pic2">
-            <a href="#">
+          <div class="second_img">
+            <a class="ancher" href="#">
               <img src="../imges/mockup-paz-metal.webp" alt="">
             </a>
+            <div class="hover hover1">
+              <h3>Paz Mental</i></h3>
+              <p> Paz Mental is a web application developed to assist people to store their personal health history in different products purchased…  </p>
+              <a href="#"><span class="btn01">Preview 
+                <i class="fa-light fa-arrow-right" style="color: #000000;"></i></span> 
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="main_pic_container1">
+      <div class="picture_section">
+        <div class="inner_div">
+          <div class="first_img">
+            <a class="hancker" href="#">
+                <img src="../imges/mockup-dwelio.webp" alt="" />
+            </a>
+            <div class="hover hover1">
+              <h3>Dwelio</h3>
+              <p> Dwelio is a digital platform designed to support real estate agents in the US and Canada by providing high-quality, verified… </p>
+              <a href="#"><span class="btn01"> Preview 
+                <i class="fa-light fa-arrow-right" style="color: red;"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="second_img">
+            <a class="ancher" href="#">
+              <img src="../imges/mockup-paz-metal.webp" alt="">
+            </a>
+            <div class="hover hover1">
+              <h3>Paz Mental</i></h3>
+              <p> Paz Mental is a web application developed to assist people to store their personal health history in different products purchased…  </p>
+              <a href="#"><span class="btn01">Preview 
+                <i class="fa-light fa-arrow-right" style="color: #000000;"></i></span> 
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ----    END:  picture section  ----  -->
+
       <!-- ---- BEGIN:section footer  ---- -->
-      <!-- <section id="section_footer">
+      <section id="section_footer">
       <footer>
         <div class="ftr">
           <div class="left">
-            <img src="./imges/diligent_logo.png" alt="Diligent Logo" />
+            <img src="../imges/diligent_logo.png" alt="Diligent Logo" />
             <p>
               When you need an IT or software expert without the tedious hiring
               process
@@ -187,11 +230,129 @@
             <small
               >Diligent Technologies 2020 – 2025. All Rights Reserved</small
             >
+            </div>
           </div>
         </div>
-      </div>
       </footer>
-      </section> -->
+      </section>
       <!-- ---- END:section footer  ---- -->
+<script  src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+      document.addEventListener("DOMContentLoaded", () => {
+        /* ---- particles.js config ---- */
+
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 380,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: "#FBFF29",
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#000000",
+              },
+              polygon: {
+                nb_sides: 5,
+              },
+              image: {
+                src: "img/github.svg",
+                width: 100,
+                height: 100,
+              },
+            },
+            opacity: {
+              value: 0.5,
+              random: false,
+              anim: {
+                enable: false,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false,
+              },
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 40,
+                size_min: 0.1,
+                sync: false,
+              },
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#ffffff",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 6,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200,
+              },
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "grab",
+              },
+              onclick: {
+                enable: true,
+                mode: "push",
+              },
+              resize: true,
+            },
+            modes: {
+              grab: {
+                distance: 140,
+                line_linked: {
+                  opacity: 1,
+                },
+              },
+              bubble: {
+                distance: 400,
+                size: 40,
+                duration: 2,
+                opacity: 8,
+                speed: 3,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+              push: {
+                particles_nb: 4,
+              },
+              remove: {
+                particles_nb: 2,
+              },
+            },
+          },
+          retina_detect: true,
+        });
+      });
+    </script>
   </body>
 </html>
