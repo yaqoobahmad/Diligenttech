@@ -142,17 +142,16 @@ canvas {
 }
 
 /* ----    END:  project first box  ---- */
-/* ----    BEGIN:  picture section  ---- */
-#main_pic_container {
-    height: 500px;
-    width: 100%;
-}
 
+/* ----    BEGIN:  picture section  ---- */
+.main_pic_container{
+    width: 80%;
+}
 .inner_div {
-    height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
@@ -168,53 +167,51 @@ canvas {
 }
 
 .first_img img {
-    height: 366px;
     width: 100%;
-    border-radius: 15px;
     object-fit: cover;
-    object-position: center 0;
-    border-radius: 30px;
+    object-position: center;
 }
-.first_img:hover .hover{
-    height: 50%;
-    bottom: 0px;
+
+.first_img:hover .hover {
+    height: 100%;
+    top: 0%;
+    padding-top: 25%;
 }
+
 .second_img {
-    height: 366px;
     width: 30%;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     border-radius: 15px;
-    border: 1px solid #303030;
+    border: 1px solid #303030 ;
 }
 
 .second_img img {
     height: 366px;
     width: 100%;
     object-fit: cover;
-    object-position: center 0;
-    border-radius: 30px;
+    object-position: center;
+    /* border-radius: 30px; */
 }
 
 .hover {
+    width: 100%;
     position: absolute;
-    /* top: 0%; */
-    height: 0%;
+    top: 100%;
     left: 0;
-    bottom: -100%;
     color: white;
     background-color: #000000d4;
     font-family: 'poppins';
     padding: 0px 50px 0px 30px;
-    width: 100%;
-    transition: all 0.7s linear;
+    transition: all 0.3s linear;
 }
 
-.second_img:hover .hover{
+.second_img:hover .hover {
     height: 100%;
-    bottom: 0%;
+    top: 0%;
     background-color: #000000d4;
+    padding-top: 30%;
 }
 
 .hover h3 {
@@ -227,11 +224,42 @@ canvas {
 
 .hover p {
     color: yellow;
+    line-height: 29px;
+    width: 80%;
+}
+
+.hover i {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
 }
 
 .btn01 {
-    background-color: yellow;
-    width: 70px;
+    height: 30px;
+    width: 120px;
+    border: 1px solid #303030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    line-height: 27px;
+
+}
+
+.btn01:hover i {
+    background-color: transparent;
+    color: yellow;
+    border: 2px solid rgb(71, 71, 28);
+}
+
+.btn01:hover {
+    background-color: transparent;
+    color: yellow;
+    border: 2px solid rgb(71, 71, 28);
 }
 
 /* ----    END:  picture section  ---- */
@@ -241,9 +269,9 @@ canvas {
 
 
 
-/* ---- BEGIN:section footer  ---- */
+/* ---- BEGIN:section footer  ----  */
+
 footer {
-    height: 23rem;
     width: 80%;
     background-color: #131213;
     margin: 50px auto;
@@ -428,8 +456,6 @@ footer {
     color: white;
 }
 
-
-
 /* ---- END:section footer  ---- */
 #second,
 #main_pic_container1,
@@ -437,7 +463,26 @@ footer {
     display: none;
 }
 
-@media (max-width:1200px) and (min-width:1080px) {}
+@media (max-width:1200px) and (min-width:1080px) {
+
+    .hover {
+       height: 60%;
+       top: 41%;
+    }
+    .img1 {
+        height: 366px;
+        width: 40%;
+    }
+
+    .hover p {
+        color: white;
+    }
+
+    .hover:hover p {
+        color: yellow;
+    }
+
+}
 
 @media (max-width:1080px) and (min-width:768px) {
     .top_border {
@@ -446,6 +491,29 @@ footer {
 
     .top_border2 {
         display: block;
+    }
+    .inner_div{
+        height: 100%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+    }
+       .hover {
+       height: 60%;
+       top: 41%;
+    }
+    .img1 {
+        height: 366px;
+        width: 85%;
+    }
+
+    .hover p {
+        color: white;
+    }
+
+    .hover:hover p {
+        color: yellow;
     }
 }
 
@@ -471,14 +539,29 @@ footer {
         top: 0;
         left: o;
     }
-
-
-
-
-
-    footer {
-        height: 60rem;
+    .inner_div{
+        flex-direction: column;
     }
+       .hover {
+       height: 60%;
+       top: 41%;
+    }
+    .img1 {
+        height: 366px;
+        width: 85%;
+    }
+
+    .hover p {
+        color: white;
+    }
+
+    .hover:hover p {
+        color: yellow;
+    }
+
+
+
+
 
     .ftr {
         display: flex;
@@ -536,14 +619,29 @@ footer {
         top: 0;
         left: o;
     }
-
-
-
-
-    footer {
-        height: 75rem;
+    .inner_div{
+        flex-direction: column;
+    }
+      .hover {
+       height: 85%;
+       top: 15%;
+       padding: 10px;
+    }
+    .img1 {
+        height: 366px;
+        width: 85%;
     }
 
+    .hover p {
+        color: white;
+    }
+
+    .hover:hover p {
+        color: yellow;
+    }
+    .box_01 h1{
+        font-size: 30px;
+    }
     .ftr {
         display: flex;
         justify-content: center;
