@@ -90,6 +90,32 @@ header{
     color: yellow;
 }
 /* ---END:: secation header------ */
+/* ---BEGIN:: secation Services------ */
+.container {
+    height: 40rem;
+    width: 80%;
+    margin: auto;
+    background-image: url();
+    color: white;
+}
+
+.box {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spn1 {
+    color: yellow;
+}
+
+.box p {
+    line-height: 29px;
+    margin-top: 30px;
+}
+/* ---END:: secation Services------ */
 
 
 @media (max-width:769px) and (min-width:420px) {
