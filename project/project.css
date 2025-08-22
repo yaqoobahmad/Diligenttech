@@ -25,7 +25,7 @@ header {
 #first {
     height: 90px;
     width: 100%;
-    border-bottom: 1px solid rgb(54, 54, 28);
+    /* border-bottom: 1px solid rgb(54, 54, 28); */
     background-color: #191919;
     display: flex;
     justify-content: space-around;
@@ -36,19 +36,23 @@ header {
 }
 
 .barline {
-    height: 50px;
-    width: 50%;
-    border: 1px solid rgb(61, 54, 19);
+    height: 60px;
+    width: 40%;
+    border: 1px solid rgba(251, 255, 41, .3);
     list-style: none;
     display: flex;
+    font-family: 'poppins';
+    padding: 3px;
     justify-content: space-around;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .barline li a {
     text-decoration: none;
     color: white;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 .barline li:hover {
@@ -119,7 +123,6 @@ header {
 
 canvas {
     display: block;
-    vertical-align: bottom;
 }
 
 #particles-js {

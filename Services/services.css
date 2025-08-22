@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -16,14 +17,16 @@ body::selection {
     background-color: yellow;
     color: black;
 }
-header{
+
+/* ----    BEGNIN: header section  ---- */
+header {
     z-index: 99;
 }
 
 #first {
     height: 90px;
     width: 100%;
-    border-bottom: 1px solid rgb(54, 54, 28);
+    /* border-bottom: 1px solid rgb(54, 54, 28); */
     background-color: #191919;
     display: flex;
     justify-content: space-around;
@@ -34,19 +37,23 @@ header{
 }
 
 .barline {
-    height: 50px;
-    width: 50%;
-    border: 1px solid rgb(61, 54, 19);
+    height: 60px;
+    width: 40%;
+    border: 1px solid rgba(251, 255, 41, .3);
     list-style: none;
     display: flex;
+    font-family: 'poppins';
+    padding: 3px;
     justify-content: space-around;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .barline li a {
     text-decoration: none;
     color: white;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 .barline li:hover {
@@ -61,7 +68,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
 }
 
 #menu {
@@ -76,7 +82,8 @@ header{
     line-height: 1.8;
     min-height: 48px;
 }
-#menu:hover{
+
+#menu:hover {
     border: 2px solid rgb(54, 54, 28);
     background-color: transparent;
     color: yellow;
@@ -86,36 +93,98 @@ header{
     color: white;
 }
 
-#svg_icon{
+#svg_icon:hover {
     color: yellow;
 }
-/* ---END:: secation header------ */
-/* ---BEGIN:: secation Services------ */
-.container {
-    height: 40rem;
+
+/* ----    END: header section  ---- */
+/* ---- BEGIN: particles.js  ---- */
+canvas {
+    display: block;
+    /* vertical-align: bottom; */
+}
+.services-box{
+
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+    z-index: 1;
+}
+
+/* ---- END: particles.js  ---- */
+/* ----    BEGIN: services  ---- */
+.container{
     width: 80%;
     margin: auto;
-    background-image: url();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+/* ----    END: services  ---- */
+/* ----    BEGIN: details_box  ---- */
+
+/* #details_box {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.details_box1 {
+    width: 100;
+    height: 230px;
+    border: 2px solid #8f8f8f;
     color: white;
+    border-radius: 30px;
+    padding: 50px 0px 0px 30px;
+    transition: all 0.5s linear;
 }
 
-.box {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.details_box1:hover {
+    transform: translateY(-2px);
+    
 }
-
-.spn1 {
+.details_box1:hover .spn1{
     color: yellow;
+    transition: all 0.30s linear;
+}
+.details_box1:hover h4{
+    color: yellow;
+    transition: all 0.50s linear;
+
+}
+.details_box1 h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2.9;
+    font-family: 'Oswald';
 }
 
-.box p {
-    line-height: 29px;
-    margin-top: 30px;
-}
-/* ---END:: secation Services------ */
+.details_box1 p {
+    line-height: 1.8;
+    width: 85%;
+} */
+
+/* ----    End: details_box  ---- */
+/* ---- BEGIN:section footer  ---- */
+
 
 
 @media (max-width:769px) and (min-width:420px) {
